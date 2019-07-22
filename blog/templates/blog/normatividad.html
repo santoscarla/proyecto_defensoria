@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+				<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-buffer">
+		<img class="img-responsive" src="https://defensoria.televisioneducativa.gob.mx/img/foro/img_audiencias.jpg" />
+	</div>
+</div><section id="normatividad" style="margin-top: 50px">
+	<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="{% static 'docs/codigo_de_etica_DGTVE.pdf' %}" target="_blank" style="color: #545454;">
+				<p>
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Código de Ética de la Dirección General de Televisión Educativa
+				</p>
+			</a>
+		</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="{% static 'docs/lineamientos_derechos_audiencias.pdf' %}" target="_blank" style="color: #545454;">
+				<p>
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Lineamientos Generales sobre los Derechos de las Audiencias.
+				</p>
+			</a>
+		</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="{% static 'docs/lineamientos_contenidos_audiovisuales.pdf' %}" target="_blank" style="color: #545454;">
+				<p>
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Lineamientos de Clasificación de Contenidos Audiovisuales de las Transmisiones Radiodifundidas y del Servicio de Televisión y Audio Restringidos.
+				</p>
+			</a>
+		</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="{% static 'docs/ley_derecho_replica.pdf' %}" target="_blank" style="color: #545454;">
+				<p>
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Ley Reglamentaria del Derecho de Réplica.
+				</p>
+			</a>
+		</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="{% static 'docs/ley_federal_telecomunicaciones.pdf' %}" target="_blank" style="color: #545454;">
+				<p>
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span> Ley Federal de Telecomunicaciones y Radiodifusión.
+				</p>
+			</a>
+		</div>
+			</div>
+</section>			</div>
+
+
+{% endblock %}

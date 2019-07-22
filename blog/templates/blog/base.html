@@ -1,0 +1,79 @@
+{% load staticfiles %}
+<html lang="es">
+<head>
+		<title>Defensoria de Audiencia</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Defensor&iacute;a de Audiencia">
+		<meta name="keywords" content="defensoria audiencia">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+        <!-- CSS gob -->
+        <link rel="stylesheet" href="https://framework-gb.cdn.gob.mx/qa/assets/styles/main.css">
+        <link rel="shortcut icon" href="https://defensoria.televisioneducativa.gob.mx/img/favicon.ico" />
+
+        <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+
+
+	</head>
+	<header><nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+         <span class="sr-only">Interruptor de Navegación</span>
+         <span class="submenu">Submenú</span>
+         </button>
+         <a class="navbar-brand" href="https://defensoria.televisioneducativa.gob.mx">
+         </a>
+      </div>
+      <div class="collapse navbar-collapse" id="subenlaces">
+         <ul class="nav navbar-nav navbar-right">
+                        <li>
+               <a href="{% url 'principal' %}"  target="_top">Inicio</a>
+            </li>
+                        <li>
+               <a href="{% url 'prueba' %}" target="_top"> Formulario</a>
+            </li>
+                        <li>
+               <a href="{% url 'principal' %}" target="_top">Informes</a>
+            </li>
+                     </ul>
+
+      </div>
+   </div>
+</nav>
+</header>
+		<main class="page">
+			<!-- Botones de letras -->
+			<div class="font-changer print" style="position: fixed; margin-top : 50px; left : 166.5px; top : 200px ! important;">
+			 	<button class="inc-font" style="background-color: white; font-size: 13px;">Aa+</button>
+				<button class="dec-font" style="background-color: white; font-size: 13px;">Aa-</button>
+				<p class="fuente" style="font-size : 19px;"></p>
+			 </div>
+		</main>
+		{% block content %}
+            {% endblock %}
+		
+	
+
+<!-- js de gob -->
+		<script src="https://framework-gb.cdn.gob.mx/qa/gobmx.js" type="text/javascript"></script>
+		
+		<footer><link rel="stylesheet" href="https://defensoria.televisioneducativa.gob.mx/css/defensoria.css" >
+<script type="text/javascript" src="https://defensoria.televisioneducativa.gob.mx/js/index.js"></script>
+</footer>
+
+
+		<script type="text/javascript" src="https://defensoria.televisioneducativa.gob.mx/js/fuente.js"></script>
+		<link href="https://defensoria.televisioneducativa.gob.mx/css/fuente.css" rel="stylesheet" />
+		<style>
+		    header .alert-warning{
+		        margin-top:46px;
+		        margin-bottom:0px;
+		        padding-top : 10px;
+		        padding-bottom : 10px;
+		    }
+		</style>
+	</body>
+</html>
